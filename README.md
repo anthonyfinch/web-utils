@@ -10,8 +10,8 @@ Simple server that echos back the path requested, the headers of the request and
 
 Runs by default on port 8080, this can be overriden by supplying a port number as an argument.
 
-		./echo.py
-		Listening on localhost:8080
+	./echo.py
+	Listening on localhost:8080
 
-		./echo.py 8050
-		Listening on localhost:8050
+	./echo.py 8050
+	Listening on localhost:8050

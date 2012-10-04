@@ -11,6 +11,10 @@ class RequestHandler(BaseHTTPRequestHandler):
 		print "Request path:", self.path
 		print "\nHeaders:\n", self.headers
 
+		data_length = self.headers.getheaders('content-length')
+		if data_length:
+			print self.rfile.read(int(data_length[0]))
+
 	def _return_success(self):
 		self.send_response(200)
 
